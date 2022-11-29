@@ -6,11 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Level 0 - Backrooms/Level 0.unity
+    guid: 4ead96bb8c7f56149822939c09ca6e81
+  - enabled: 1
     path: Assets/Level 1 - Preface/Level 1.unity
     guid: 3d905924ab6a99b4880823ca7e130a10
   - enabled: 1
     path: Assets/Level 2 - Eco/Level 2.unity
     guid: ff6548e2d88c2934da5143997740f79c
+  - enabled: 1
+    path: Assets/Level 3 - Cubicle/Level 3.unity
+    guid: 8b7761d4dd48a984b846688a2f42df72
+  - enabled: 1
+    path: Assets/Level 4 - War/Level 4.unity
+    guid: 9303f6e924a329344b8832b6019774bc
+  - enabled: 1
+    path: Assets/Level 5 - Isolation/Level 5.unity
+    guid: fae928de79b6b25439d6752fc912ae07
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 180f045cc54203545ae138ce0318d48f, type: 2}
     com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 70efe5d6fcb00e04dadc625e64dad488, type: 2}

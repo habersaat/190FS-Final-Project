@@ -9,7 +9,8 @@ public class WorldJump : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.name == "VRHeadset") {
-            SceneManager.LoadScene(1);
+            int x = SceneManager.GetActiveScene().buildIndex;
+            SceneManager.LoadScene(x+1);
             Debug.Log("Working...");
         } 
     }
