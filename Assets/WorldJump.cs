@@ -12,6 +12,7 @@ public class WorldJump : MonoBehaviour
     }
 
     IEnumerator GoToSceneRoutine(int idx) {
+        Debug.Log("actovatedd");
         fadeScreen.FadeOut();
         yield return new WaitForSeconds(fadeScreen.duration);
 
@@ -23,9 +24,9 @@ public class WorldJump : MonoBehaviour
     {
         if (other.gameObject.name == "VRHeadset") {
             int x = SceneManager.GetActiveScene().buildIndex;
-            GoToScene(x+1);
+            // GoToScene(x+1);
+            SceneManager.LoadScene(x+1);
             Debug.Log("Working...");
         } 
     }
-
 }

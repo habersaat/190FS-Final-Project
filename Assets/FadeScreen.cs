@@ -12,7 +12,9 @@ public class FadeScreen : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        if(fadeOnStart) FadeIn();
+        if(fadeOnStart) {
+            FadeIn();
+        }
     }
 
     public IEnumerator FadeRoutine(float opIn, float opOut) {
