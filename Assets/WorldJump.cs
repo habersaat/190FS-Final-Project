@@ -29,4 +29,10 @@ public class WorldJump : MonoBehaviour
             Debug.Log("Working...");
         } 
     }
+
+    public void jumpBack() {
+        int x = SceneManager.GetActiveScene().buildIndex;
+        SceneManager.LoadScene(x-1);
+    }
+
 }
