@@ -6,7 +6,7 @@ public class Bob : MonoBehaviour
     
     private GameObject[] items;
     private Vector3[] directions;
-    float speed = 0.125f;
+    float speed = 0.0825f;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,26 +19,26 @@ public class Bob : MonoBehaviour
         directions = new Vector3[1254];
 
         GameObject bottle = GameObject.Find("L2-bottle");
-        bottle.tag="bob";
+        // bottle.tag="bob";
         for (int i = 0; i < 500; i++) {
             SpawnObject(bottle, x1, y1, x2, y2);
             
            
         }
         GameObject plasticrings = GameObject.Find("L2-plastic-rings");
-        plasticrings.tag="bob";
+        // plasticrings.tag="bob";
         for (int i = 0; i < 500; i++) {
             SpawnObject(plasticrings, x1, y1, x2, y2);  
         }
 
         GameObject tire = GameObject.Find("L2-tire 1");
-        tire.tag="bob";
+        // tire.tag="bob";
         for (int i = 0; i < 125; i++) {
             SpawnObject(tire, x1, y1, x2, y2);
         }
 
         GameObject trafficcone = GameObject.Find("L2-traffic-cone");
-        trafficcone.tag="bob";
+        // trafficcone.tag="bob";
         for (int i = 0; i < 125; i++) {
             SpawnObject(trafficcone, x1, y1, x2, y2);
         }
@@ -50,18 +50,15 @@ public class Bob : MonoBehaviour
 
     // Update is called once per frame
     int ticker = 0;
-    Vector3 Direction = Vector3.up;
-    
     
     void Update()
     {
         int tracker = 0;
         ticker++;
-        if(ticker % 240 == 0) Direction *= -1;
         items = GameObject.FindGameObjectsWithTag("bob");
         foreach(GameObject r in items)
         {  
-            if(r.transform.position.y > 0.25) {
+            if(r.transform.position.y > 0) {
                 directions[tracker] = new Vector3(0, -speed, 0);;
             } else if (r.transform.position.y < -0.25) {
                 directions[tracker] = new Vector3(0, speed, 0);;
