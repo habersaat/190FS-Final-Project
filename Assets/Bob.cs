@@ -21,26 +21,26 @@ public class Bob : MonoBehaviour
         GameObject bottle = GameObject.Find("L2-bottle");
         // bottle.tag="bob";
         for (int i = 0; i < 500; i++) {
-            SpawnObject(bottle, x1, y1, x2, y2);
+            SpawnObject(bottle, x1, y1, x2, y2, true);
             
            
         }
         GameObject plasticrings = GameObject.Find("L2-plastic-rings");
         // plasticrings.tag="bob";
         for (int i = 0; i < 500; i++) {
-            SpawnObject(plasticrings, x1, y1, x2, y2);  
+            SpawnObject(plasticrings, x1, y1, x2, y2, true);  
         }
 
         GameObject tire = GameObject.Find("L2-tire 1");
         // tire.tag="bob";
         for (int i = 0; i < 125; i++) {
-            SpawnObject(tire, x1, y1, x2, y2);
+            SpawnObject(tire, x1, y1, x2, y2, false);
         }
 
         GameObject trafficcone = GameObject.Find("L2-traffic-cone");
         // trafficcone.tag="bob";
         for (int i = 0; i < 125; i++) {
-            SpawnObject(trafficcone, x1, y1, x2, y2);
+            SpawnObject(trafficcone, x1, y1, x2, y2, false);
         }
 
         for(int i = 0; i < 1254; i++) {
@@ -69,10 +69,12 @@ public class Bob : MonoBehaviour
         }
     }
 
-    void SpawnObject(GameObject objectToSpawn, float x1, float y1, float x2, float y2)
+    void SpawnObject(GameObject objectToSpawn, float x1, float y1, float x2, float y2, bool spawnLower)
     {
         float x = Random.Range(x1, x2);
-        float y = Random.Range(-0.5f, -0.25f);
+        float y;
+        if(spawnLower) y = Random.Range(-0.75f, -0.50f);
+        else y = Random.Range(-0.5f, -0.25f);
         float z = Random.Range(y1, y2);
         Vector2 spawnPoint = new Vector2(x, y);
         Instantiate(objectToSpawn, new Vector3(x, y, z), Random.rotation);
