@@ -17,7 +17,7 @@ public class SendBack : MonoBehaviour
 
     IEnumerator GoToSceneRoutine() {
         Debug.Log("Starting 2");
-        yield return new WaitForSeconds(22.5f);
+        yield return new WaitForSeconds(27.5f);
         Debug.Log("actovatedd");
         //fadeScreen.FadeOut();
         //yield return new WaitForSeconds(fadeScreen.duration);
