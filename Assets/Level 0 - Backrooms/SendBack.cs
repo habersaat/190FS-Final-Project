@@ -22,7 +22,7 @@ public class SendBack : MonoBehaviour
         //fadeScreen.FadeOut();
         //yield return new WaitForSeconds(fadeScreen.duration);
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(5);
     }
 
     //Upon collision with another GameObject, this GameObject will reverse direction
