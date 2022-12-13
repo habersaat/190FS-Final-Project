@@ -20,11 +20,11 @@ public class CubicalSounds : MonoBehaviour
         ticker++;
         if(ticker == 1500) {
             Debug.Log("Played 2");
-            source2.PlayOneShot(clip2);
+            source.PlayOneShot(clip2);
         }
         if(ticker == 3000) {
             Debug.Log("Played 3");
-            source2.PlayOneShot(clip3);
+            source.PlayOneShot(clip3);
         }
     }
 }
