@@ -2644,7 +2644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df1d172aa3f248a4380ba21cd1c8b20e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeScreen: {fileID: 0}
+  fadeScreen: {fileID: 1289457572}
 --- !u!65 &729509706
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4429,6 +4429,17 @@ Transform:
   m_Father: {fileID: 1327461622}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &1289457572 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8890460241611999359, guid: be1de2596b6090d439a84f4dbffd4b55, type: 3}
+  m_PrefabInstance: {fileID: 872496523}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8da80a9ef77cbc342967800916e7973d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1327461621
 GameObject:
   m_ObjectHideFlags: 0
