@@ -27,6 +27,4 @@ public class CubicalSounds : MonoBehaviour
             source2.PlayOneShot(clip3);
         }
     }
-
-
 }
