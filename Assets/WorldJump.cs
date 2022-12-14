@@ -32,7 +32,7 @@ public class WorldJump : MonoBehaviour
 
     public void jumpBack() {
         int x = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(x-1);
+        if(x != 5) SceneManager.LoadScene(x-1);
     }
 
 }

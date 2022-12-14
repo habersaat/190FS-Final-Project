@@ -78,5 +78,5 @@ public class Bob : MonoBehaviour
         float z = Random.Range(y1, y2);
         Vector2 spawnPoint = new Vector2(x, y);
         Instantiate(objectToSpawn, new Vector3(x, y, z), Random.rotation);
-}
+    }
 }
